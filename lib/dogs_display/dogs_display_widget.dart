@@ -1,3 +1,5 @@
+import 'package:daily_dogs/data/dogs_display/dogs_repository.dart';
+import 'package:daily_dogs/di.dart';
 import 'package:daily_dogs/dogs_display/bloc/dogs_display_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -14,7 +16,7 @@ class _DogsDisplayWidgetState extends State<DogsDisplayWidget> {
 
   @override
   void initState() {
-    _bloc = DogsDisplayBloc();
+    _bloc = DogsDisplayBloc(dogsRepository: getIt<DogsRepository>())..add(FetchRandomDogsEvent());
     super.initState();
   }
 

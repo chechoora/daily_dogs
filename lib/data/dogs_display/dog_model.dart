@@ -2,5 +2,8 @@ class DogModel {
   final String id;
   final String imageUrl;
 
-  DogModel(this.id, this.imageUrl);
+  DogModel({
+    required this.id,
+    required this.imageUrl,
+  });
 }
