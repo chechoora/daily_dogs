@@ -18,8 +18,26 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Scaffold(
-        body: DogsDisplayWidget(),
+      home: DefaultTabController(
+        length: 2,
+        child: Scaffold(
+          appBar: AppBar(
+            title: const Text('Daily Dogs'),
+            backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+            bottom: const TabBar(
+              tabs: [
+                Tab(icon: Icon(Icons.search)),
+                Tab(icon: Icon(Icons.favorite)),
+              ],
+            ),
+          ),
+          body: const TabBarView(
+            children: [
+              DogsDisplayWidget(),
+              Placeholder(),
+            ],
+          ),
+        ),
       ),
     );
   }

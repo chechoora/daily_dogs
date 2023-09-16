@@ -15,10 +15,20 @@ class DogsRepository {
     final response = await dogApiService.searchRandomImages();
     if (response.isSuccessful) {
       final body = response.body;
-      if (body is String) {
-        return dogMapper.mapFromResponse(body);
-      }
+      return dogMapper.mapFromResponse(body);
     }
     return [];
+  }
+
+  Future<bool> addDogToFavorites(String id) async {
+    final response = await dogApiService.addToFavorites(
+      body: <String, dynamic>{
+        "image_id": id,
+      },
+    );
+    if (response.isSuccessful) {
+      return true;
+    }
+    return false;
   }
 }

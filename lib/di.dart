@@ -1,5 +1,6 @@
 import 'package:chopper/chopper.dart';
 import 'package:daily_dogs/data/api/dog_api_service.dart';
+import 'package:daily_dogs/data/api/header_interceptor.dart';
 import 'package:daily_dogs/data/dogs_display/dog_mapper.dart';
 import 'package:daily_dogs/data/dogs_display/dogs_repository.dart';
 import 'package:get_it/get_it.dart';
@@ -17,6 +18,10 @@ void _setupAPI() {
     services: [
       DogApiService.create(),
     ],
+    interceptors: [
+      HeaderInterceptor(),
+    ],
+    converter: const JsonConverter(),
   );
   getIt.registerSingleton<ChopperClient>(dogApiClient);
 }

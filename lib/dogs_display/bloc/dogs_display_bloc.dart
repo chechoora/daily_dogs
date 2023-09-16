@@ -10,6 +10,7 @@ class DogsDisplayBloc extends Bloc<DogsDisplayEvent, DogsDisplayState> {
     required this.dogsRepository,
   }) : super(LoadingState()) {
     on<FetchRandomDogsEvent>(_onFetchRandomDogsEvent);
+    on<AddToFavoritesEvent>(_onAddToFavoritesEvent);
   }
 
   final DogsRepository dogsRepository;
@@ -20,6 +21,14 @@ class DogsDisplayBloc extends Bloc<DogsDisplayEvent, DogsDisplayState> {
   ) async {
     final randomDogs = await dogsRepository.fetchRandomDogs();
     emit(DataState(randomDogs));
+  }
+
+  FutureOr<void> _onAddToFavoritesEvent(
+    AddToFavoritesEvent event,
+    Emitter<DogsDisplayState> emit,
+  ) async {
+    emit(NotifyState('Adding doge to favorites'));
+    await dogsRepository.addDogToFavorites(event.id);
   }
 }
 
@@ -36,9 +45,24 @@ class DataState extends DogsDisplayState {
   DataState(this.dogDisplayList);
 }
 
+class NotifyState extends DogsDisplayState {
+  final String message;
+
+  NotifyState(this.message);
+}
+
 abstract class DogsDisplayEvent extends Equatable {
   @override
   List<Object?> get props => [];
 }
 
 class FetchRandomDogsEvent extends DogsDisplayEvent {}
+
+class AddToFavoritesEvent extends DogsDisplayEvent {
+  final String id;
+
+  AddToFavoritesEvent(this.id);
+
+  @override
+  List<Object?> get props => [id];
+}
