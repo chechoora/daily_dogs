@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  daily_watch_dogs Watch App
+//  Daily Dogs Watch App
 //
-//  Created by Kyrylo Kharchenko on 13.09.2023.
+//  Created by Kyrylo Kharchenko on 17.09.2023.
 //
 
 import SwiftUI

@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		017666C9C6AD87DE2D4CB853 /* Pods_RunnerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3F36980E7A39437CF48F94 /* Pods_RunnerTests.framework */; };
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
+		22B981CCFA1DED25CCFC6E2B /* libPods-Daily Dogs Watch App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13421EC1642FBBD698167266 /* libPods-Daily Dogs Watch App.a */; };
 		331C808B294A63AB00263BE5 /* RunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C807B294A618700263BE5 /* RunnerTests.swift */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
-		560D57D52AB1B78100DA6F71 /* daily_watch_dogsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D57D42AB1B78100DA6F71 /* daily_watch_dogsApp.swift */; };
-		560D57D72AB1B78100DA6F71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D57D62AB1B78100DA6F71 /* ContentView.swift */; };
-		560D57D92AB1B78100DA6F71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 560D57D82AB1B78100DA6F71 /* Assets.xcassets */; };
-		560D57DC2AB1B78100DA6F71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 560D57DB2AB1B78100DA6F71 /* Preview Assets.xcassets */; };
-		560D57E62AB1B78200DA6F71 /* daily_watch_dogs_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D57E52AB1B78200DA6F71 /* daily_watch_dogs_Watch_AppTests.swift */; };
-		560D57F02AB1B78200DA6F71 /* daily_watch_dogs_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D57EF2AB1B78200DA6F71 /* daily_watch_dogs_Watch_AppUITests.swift */; };
-		560D57F22AB1B78200DA6F71 /* daily_watch_dogs_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560D57F12AB1B78200DA6F71 /* daily_watch_dogs_Watch_AppUITestsLaunchTests.swift */; };
-		560D57F52AB1B78200DA6F71 /* daily_watch_dogs Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 560D57D22AB1B78100DA6F71 /* daily_watch_dogs Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		440B7E43D3674497935CA1DB /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7DE27E42D9DA2B05FD12D6 /* Pods_Runner.framework */; };
+		568AFA142AB7450B0041D723 /* Daily_DogsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AFA132AB7450B0041D723 /* Daily_DogsApp.swift */; };
+		568AFA162AB7450B0041D723 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AFA152AB7450B0041D723 /* ContentView.swift */; };
+		568AFA182AB7450C0041D723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 568AFA172AB7450C0041D723 /* Assets.xcassets */; };
+		568AFA1B2AB7450C0041D723 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 568AFA1A2AB7450C0041D723 /* Preview Assets.xcassets */; };
+		568AFA252AB7450C0041D723 /* Daily_Dogs_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AFA242AB7450C0041D723 /* Daily_Dogs_Watch_AppTests.swift */; };
+		568AFA2F2AB7450C0041D723 /* Daily_Dogs_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AFA2E2AB7450C0041D723 /* Daily_Dogs_Watch_AppUITests.swift */; };
+		568AFA312AB7450C0041D723 /* Daily_Dogs_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AFA302AB7450C0041D723 /* Daily_Dogs_Watch_AppUITestsLaunchTests.swift */; };
+		568AFA352AB7450C0041D723 /* Daily Dogs Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 568AFA112AB7450B0041D723 /* Daily Dogs Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5698963C2AB747C3003A8263 /* WatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569896382AB747C3003A8263 /* WatchService.swift */; };
+		5698963D2AB747C3003A8263 /* WatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5698963A2AB747C3003A8263 /* WatchViewModel.swift */; };
+		5698963E2AB747C3003A8263 /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5698963B2AB747C3003A8263 /* WatchView.swift */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
@@ -32,37 +38,37 @@
 			remoteGlobalIDString = 97C146ED1CF9000F007C117D;
 			remoteInfo = Runner;
 		};
-		560D57E22AB1B78200DA6F71 /* PBXContainerItemProxy */ = {
+		568AFA212AB7450C0041D723 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 560D57D12AB1B78100DA6F71;
-			remoteInfo = "daily_watch_dogs Watch App";
+			remoteGlobalIDString = 568AFA102AB7450B0041D723;
+			remoteInfo = "Daily Dogs Watch App";
 		};
-		560D57EC2AB1B78200DA6F71 /* PBXContainerItemProxy */ = {
+		568AFA2B2AB7450C0041D723 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 560D57D12AB1B78100DA6F71;
-			remoteInfo = "daily_watch_dogs Watch App";
+			remoteGlobalIDString = 568AFA102AB7450B0041D723;
+			remoteInfo = "Daily Dogs Watch App";
 		};
-		560D57F32AB1B78200DA6F71 /* PBXContainerItemProxy */ = {
+		568AFA322AB7450C0041D723 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 560D57D12AB1B78100DA6F71;
-			remoteInfo = "daily_watch_dogs Watch App";
+			remoteGlobalIDString = 568AFA102AB7450B0041D723;
+			remoteInfo = "Daily Dogs Watch App";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		560D57F62AB1B78200DA6F71 /* Embed Watch Content */ = {
+		568AFA342AB7450C0041D723 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				560D57F52AB1B78200DA6F71 /* daily_watch_dogs Watch App.app in Embed Watch Content */,
+				568AFA352AB7450C0041D723 /* Daily Dogs Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,24 +86,34 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0376FF090A2EDC18EB9C0743 /* Pods-Daily Dogs Watch App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily Dogs Watch App.release.xcconfig"; path = "Target Support Files/Pods-Daily Dogs Watch App/Pods-Daily Dogs Watch App.release.xcconfig"; sourceTree = "<group>"; };
+		11151AEC9C803EAA8A5017EA /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
+		13421EC1642FBBD698167266 /* libPods-Daily Dogs Watch App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Daily Dogs Watch App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		260B46D4B14FBF2B654CC317 /* Pods-RunnerTests.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.profile.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.profile.xcconfig"; sourceTree = "<group>"; };
+		2B7DE27E42D9DA2B05FD12D6 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		331C807B294A618700263BE5 /* RunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerTests.swift; sourceTree = "<group>"; };
 		331C8081294A63A400263BE5 /* RunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3F36980E7A39437CF48F94 /* Pods_RunnerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunnerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
-		560D57D22AB1B78100DA6F71 /* daily_watch_dogs Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "daily_watch_dogs Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		560D57D42AB1B78100DA6F71 /* daily_watch_dogsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daily_watch_dogsApp.swift; sourceTree = "<group>"; };
-		560D57D62AB1B78100DA6F71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		560D57D82AB1B78100DA6F71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		560D57DB2AB1B78100DA6F71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		560D57E12AB1B78200DA6F71 /* daily_watch_dogs Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "daily_watch_dogs Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		560D57E52AB1B78200DA6F71 /* daily_watch_dogs_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daily_watch_dogs_Watch_AppTests.swift; sourceTree = "<group>"; };
-		560D57EB2AB1B78200DA6F71 /* daily_watch_dogs Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "daily_watch_dogs Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		560D57EF2AB1B78200DA6F71 /* daily_watch_dogs_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daily_watch_dogs_Watch_AppUITests.swift; sourceTree = "<group>"; };
-		560D57F12AB1B78200DA6F71 /* daily_watch_dogs_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daily_watch_dogs_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		568AFA112AB7450B0041D723 /* Daily Dogs Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Dogs Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		568AFA132AB7450B0041D723 /* Daily_DogsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_DogsApp.swift; sourceTree = "<group>"; };
+		568AFA152AB7450B0041D723 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		568AFA172AB7450C0041D723 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		568AFA1A2AB7450C0041D723 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		568AFA202AB7450C0041D723 /* Daily Dogs Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daily Dogs Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		568AFA242AB7450C0041D723 /* Daily_Dogs_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Dogs_Watch_AppTests.swift; sourceTree = "<group>"; };
+		568AFA2A2AB7450C0041D723 /* Daily Dogs Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daily Dogs Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		568AFA2E2AB7450C0041D723 /* Daily_Dogs_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Dogs_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		568AFA302AB7450C0041D723 /* Daily_Dogs_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Dogs_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		569896382AB747C3003A8263 /* WatchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchService.swift; sourceTree = "<group>"; };
+		5698963A2AB747C3003A8263 /* WatchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchViewModel.swift; sourceTree = "<group>"; };
+		5698963B2AB747C3003A8263 /* WatchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
+		88B3BA83329662EAAB088CB8 /* Pods-Daily Dogs Watch App.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily Dogs Watch App.profile.xcconfig"; path = "Target Support Files/Pods-Daily Dogs Watch App/Pods-Daily Dogs Watch App.profile.xcconfig"; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
 		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
 		97C146EE1CF9000F007C117D /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,24 +121,38 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AED2DD515F77C906B932DA9A /* Pods-RunnerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.release.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.release.xcconfig"; sourceTree = "<group>"; };
+		CFEEBC07256CC7CA85A5CCE1 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
+		DBE0587B6949D3B2BD690D63 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
+		EB701740AAEC8D642ECF5489 /* Pods-RunnerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.debug.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F14F57F93DC58DE2F15AD932 /* Pods-Daily Dogs Watch App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily Dogs Watch App.debug.xcconfig"; path = "Target Support Files/Pods-Daily Dogs Watch App/Pods-Daily Dogs Watch App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		560D57CF2AB1B78100DA6F71 /* Frameworks */ = {
+		2BF24EAAD8E0A67F279E7AE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017666C9C6AD87DE2D4CB853 /* Pods_RunnerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		568AFA0E2AB7450B0041D723 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B981CCFA1DED25CCFC6E2B /* libPods-Daily Dogs Watch App.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		568AFA1D2AB7450C0041D723 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		560D57DE2AB1B78200DA6F71 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		560D57E82AB1B78200DA6F71 /* Frameworks */ = {
+		568AFA272AB7450C0041D723 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -133,12 +163,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				440B7E43D3674497935CA1DB /* Pods_Runner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		166DEAF04CC414E5C78A6C36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B7DE27E42D9DA2B05FD12D6 /* Pods_Runner.framework */,
+				3A3F36980E7A39437CF48F94 /* Pods_RunnerTests.framework */,
+				13421EC1642FBBD698167266 /* libPods-Daily Dogs Watch App.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		331C8082294A63A400263BE5 /* RunnerTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,40 +188,59 @@
 			path = RunnerTests;
 			sourceTree = "<group>";
 		};
-		560D57D32AB1B78100DA6F71 /* daily_watch_dogs Watch App */ = {
+		568AFA122AB7450B0041D723 /* Daily Dogs Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				560D57D42AB1B78100DA6F71 /* daily_watch_dogsApp.swift */,
-				560D57D62AB1B78100DA6F71 /* ContentView.swift */,
-				560D57D82AB1B78100DA6F71 /* Assets.xcassets */,
-				560D57DA2AB1B78100DA6F71 /* Preview Content */,
+				569896372AB747C3003A8263 /* Service */,
+				569896392AB747C3003A8263 /* WatchView */,
+				568AFA132AB7450B0041D723 /* Daily_DogsApp.swift */,
+				568AFA152AB7450B0041D723 /* ContentView.swift */,
+				568AFA172AB7450C0041D723 /* Assets.xcassets */,
+				568AFA192AB7450C0041D723 /* Preview Content */,
 			);
-			path = "daily_watch_dogs Watch App";
+			path = "Daily Dogs Watch App";
 			sourceTree = "<group>";
 		};
-		560D57DA2AB1B78100DA6F71 /* Preview Content */ = {
+		568AFA192AB7450C0041D723 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				560D57DB2AB1B78100DA6F71 /* Preview Assets.xcassets */,
+				568AFA1A2AB7450C0041D723 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		560D57E42AB1B78200DA6F71 /* daily_watch_dogs Watch AppTests */ = {
+		568AFA232AB7450C0041D723 /* Daily Dogs Watch AppTests */ = {
 			isa = PBXGroup;
 			children = (
-				560D57E52AB1B78200DA6F71 /* daily_watch_dogs_Watch_AppTests.swift */,
+				568AFA242AB7450C0041D723 /* Daily_Dogs_Watch_AppTests.swift */,
 			);
-			path = "daily_watch_dogs Watch AppTests";
+			path = "Daily Dogs Watch AppTests";
 			sourceTree = "<group>";
 		};
-		560D57EE2AB1B78200DA6F71 /* daily_watch_dogs Watch AppUITests */ = {
+		568AFA2D2AB7450C0041D723 /* Daily Dogs Watch AppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				560D57EF2AB1B78200DA6F71 /* daily_watch_dogs_Watch_AppUITests.swift */,
-				560D57F12AB1B78200DA6F71 /* daily_watch_dogs_Watch_AppUITestsLaunchTests.swift */,
+				568AFA2E2AB7450C0041D723 /* Daily_Dogs_Watch_AppUITests.swift */,
+				568AFA302AB7450C0041D723 /* Daily_Dogs_Watch_AppUITestsLaunchTests.swift */,
 			);
-			path = "daily_watch_dogs Watch AppUITests";
+			path = "Daily Dogs Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		569896372AB747C3003A8263 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				569896382AB747C3003A8263 /* WatchService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		569896392AB747C3003A8263 /* WatchView */ = {
+			isa = PBXGroup;
+			children = (
+				5698963A2AB747C3003A8263 /* WatchViewModel.swift */,
+				5698963B2AB747C3003A8263 /* WatchView.swift */,
+			);
+			path = WatchView;
 			sourceTree = "<group>";
 		};
 		9740EEB11CF90186004384FC /* Flutter */ = {
@@ -199,11 +259,13 @@
 			children = (
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
-				560D57D32AB1B78100DA6F71 /* daily_watch_dogs Watch App */,
-				560D57E42AB1B78200DA6F71 /* daily_watch_dogs Watch AppTests */,
-				560D57EE2AB1B78200DA6F71 /* daily_watch_dogs Watch AppUITests */,
+				568AFA122AB7450B0041D723 /* Daily Dogs Watch App */,
+				568AFA232AB7450C0041D723 /* Daily Dogs Watch AppTests */,
+				568AFA2D2AB7450C0041D723 /* Daily Dogs Watch AppUITests */,
 				97C146EF1CF9000F007C117D /* Products */,
 				331C8082294A63A400263BE5 /* RunnerTests */,
+				DB51BE5238FAAA67E5EEF941 /* Pods */,
+				166DEAF04CC414E5C78A6C36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,9 +274,9 @@
 			children = (
 				97C146EE1CF9000F007C117D /* Runner.app */,
 				331C8081294A63A400263BE5 /* RunnerTests.xctest */,
-				560D57D22AB1B78100DA6F71 /* daily_watch_dogs Watch App.app */,
-				560D57E12AB1B78200DA6F71 /* daily_watch_dogs Watch AppTests.xctest */,
-				560D57EB2AB1B78200DA6F71 /* daily_watch_dogs Watch AppUITests.xctest */,
+				568AFA112AB7450B0041D723 /* Daily Dogs Watch App.app */,
+				568AFA202AB7450C0041D723 /* Daily Dogs Watch AppTests.xctest */,
+				568AFA2A2AB7450C0041D723 /* Daily Dogs Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -234,6 +296,22 @@
 			path = Runner;
 			sourceTree = "<group>";
 		};
+		DB51BE5238FAAA67E5EEF941 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBE0587B6949D3B2BD690D63 /* Pods-Runner.debug.xcconfig */,
+				11151AEC9C803EAA8A5017EA /* Pods-Runner.release.xcconfig */,
+				CFEEBC07256CC7CA85A5CCE1 /* Pods-Runner.profile.xcconfig */,
+				EB701740AAEC8D642ECF5489 /* Pods-RunnerTests.debug.xcconfig */,
+				AED2DD515F77C906B932DA9A /* Pods-RunnerTests.release.xcconfig */,
+				260B46D4B14FBF2B654CC317 /* Pods-RunnerTests.profile.xcconfig */,
+				F14F57F93DC58DE2F15AD932 /* Pods-Daily Dogs Watch App.debug.xcconfig */,
+				0376FF090A2EDC18EB9C0743 /* Pods-Daily Dogs Watch App.release.xcconfig */,
+				88B3BA83329662EAAB088CB8 /* Pods-Daily Dogs Watch App.profile.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -241,8 +319,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 331C8087294A63A400263BE5 /* Build configuration list for PBXNativeTarget "RunnerTests" */;
 			buildPhases = (
+				6C19F372980A297104BEE739 /* [CP] Check Pods Manifest.lock */,
 				331C807D294A63A400263BE5 /* Sources */,
 				331C807F294A63A400263BE5 /* Resources */,
+				2BF24EAAD8E0A67F279E7AE9 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,75 +334,78 @@
 			productReference = 331C8081294A63A400263BE5 /* RunnerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		560D57D12AB1B78100DA6F71 /* daily_watch_dogs Watch App */ = {
+		568AFA102AB7450B0041D723 /* Daily Dogs Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 560D58002AB1B78200DA6F71 /* Build configuration list for PBXNativeTarget "daily_watch_dogs Watch App" */;
+			buildConfigurationList = 568AFA362AB7450C0041D723 /* Build configuration list for PBXNativeTarget "Daily Dogs Watch App" */;
 			buildPhases = (
-				560D57CE2AB1B78100DA6F71 /* Sources */,
-				560D57CF2AB1B78100DA6F71 /* Frameworks */,
-				560D57D02AB1B78100DA6F71 /* Resources */,
+				10C8AFA60E8BBA30787A9D45 /* [CP] Check Pods Manifest.lock */,
+				568AFA0D2AB7450B0041D723 /* Sources */,
+				568AFA0E2AB7450B0041D723 /* Frameworks */,
+				568AFA0F2AB7450B0041D723 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "daily_watch_dogs Watch App";
-			productName = "daily_watch_dogs Watch App";
-			productReference = 560D57D22AB1B78100DA6F71 /* daily_watch_dogs Watch App.app */;
+			name = "Daily Dogs Watch App";
+			productName = "Daily Dogs Watch App";
+			productReference = 568AFA112AB7450B0041D723 /* Daily Dogs Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		560D57E02AB1B78200DA6F71 /* daily_watch_dogs Watch AppTests */ = {
+		568AFA1F2AB7450C0041D723 /* Daily Dogs Watch AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 560D58012AB1B78200DA6F71 /* Build configuration list for PBXNativeTarget "daily_watch_dogs Watch AppTests" */;
+			buildConfigurationList = 568AFA3A2AB7450C0041D723 /* Build configuration list for PBXNativeTarget "Daily Dogs Watch AppTests" */;
 			buildPhases = (
-				560D57DD2AB1B78200DA6F71 /* Sources */,
-				560D57DE2AB1B78200DA6F71 /* Frameworks */,
-				560D57DF2AB1B78200DA6F71 /* Resources */,
+				568AFA1C2AB7450C0041D723 /* Sources */,
+				568AFA1D2AB7450C0041D723 /* Frameworks */,
+				568AFA1E2AB7450C0041D723 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				560D57E32AB1B78200DA6F71 /* PBXTargetDependency */,
+				568AFA222AB7450C0041D723 /* PBXTargetDependency */,
 			);
-			name = "daily_watch_dogs Watch AppTests";
-			productName = "daily_watch_dogs Watch AppTests";
-			productReference = 560D57E12AB1B78200DA6F71 /* daily_watch_dogs Watch AppTests.xctest */;
+			name = "Daily Dogs Watch AppTests";
+			productName = "Daily Dogs Watch AppTests";
+			productReference = 568AFA202AB7450C0041D723 /* Daily Dogs Watch AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		560D57EA2AB1B78200DA6F71 /* daily_watch_dogs Watch AppUITests */ = {
+		568AFA292AB7450C0041D723 /* Daily Dogs Watch AppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 560D58022AB1B78200DA6F71 /* Build configuration list for PBXNativeTarget "daily_watch_dogs Watch AppUITests" */;
+			buildConfigurationList = 568AFA3E2AB7450C0041D723 /* Build configuration list for PBXNativeTarget "Daily Dogs Watch AppUITests" */;
 			buildPhases = (
-				560D57E72AB1B78200DA6F71 /* Sources */,
-				560D57E82AB1B78200DA6F71 /* Frameworks */,
-				560D57E92AB1B78200DA6F71 /* Resources */,
+				568AFA262AB7450C0041D723 /* Sources */,
+				568AFA272AB7450C0041D723 /* Frameworks */,
+				568AFA282AB7450C0041D723 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				560D57ED2AB1B78200DA6F71 /* PBXTargetDependency */,
+				568AFA2C2AB7450C0041D723 /* PBXTargetDependency */,
 			);
-			name = "daily_watch_dogs Watch AppUITests";
-			productName = "daily_watch_dogs Watch AppUITests";
-			productReference = 560D57EB2AB1B78200DA6F71 /* daily_watch_dogs Watch AppUITests.xctest */;
+			name = "Daily Dogs Watch AppUITests";
+			productName = "Daily Dogs Watch AppUITests";
+			productReference = 568AFA2A2AB7450C0041D723 /* Daily Dogs Watch AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		97C146ED1CF9000F007C117D /* Runner */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */;
 			buildPhases = (
+				34FC672C20574FF5B7BB7096 /* [CP] Check Pods Manifest.lock */,
 				9740EEB61CF901F6004384FC /* Run Script */,
 				97C146EA1CF9000F007C117D /* Sources */,
 				97C146EB1CF9000F007C117D /* Frameworks */,
 				97C146EC1CF9000F007C117D /* Resources */,
 				9705A1C41CF9048500538489 /* Embed Frameworks */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
-				560D57F62AB1B78200DA6F71 /* Embed Watch Content */,
+				568AFA342AB7450C0041D723 /* Embed Watch Content */,
+				B9F00BEDD668C8B976865234 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				560D57F42AB1B78200DA6F71 /* PBXTargetDependency */,
+				568AFA332AB7450C0041D723 /* PBXTargetDependency */,
 			);
 			name = Runner;
 			productName = Runner;
@@ -344,16 +427,16 @@
 						CreatedOnToolsVersion = 14.0;
 						TestTargetID = 97C146ED1CF9000F007C117D;
 					};
-					560D57D12AB1B78100DA6F71 = {
+					568AFA102AB7450B0041D723 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
-					560D57E02AB1B78200DA6F71 = {
+					568AFA1F2AB7450C0041D723 = {
 						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = 560D57D12AB1B78100DA6F71;
+						TestTargetID = 568AFA102AB7450B0041D723;
 					};
-					560D57EA2AB1B78200DA6F71 = {
+					568AFA292AB7450C0041D723 = {
 						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = 560D57D12AB1B78100DA6F71;
+						TestTargetID = 568AFA102AB7450B0041D723;
 					};
 					97C146ED1CF9000F007C117D = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -376,9 +459,9 @@
 			targets = (
 				97C146ED1CF9000F007C117D /* Runner */,
 				331C8080294A63A400263BE5 /* RunnerTests */,
-				560D57D12AB1B78100DA6F71 /* daily_watch_dogs Watch App */,
-				560D57E02AB1B78200DA6F71 /* daily_watch_dogs Watch AppTests */,
-				560D57EA2AB1B78200DA6F71 /* daily_watch_dogs Watch AppUITests */,
+				568AFA102AB7450B0041D723 /* Daily Dogs Watch App */,
+				568AFA1F2AB7450C0041D723 /* Daily Dogs Watch AppTests */,
+				568AFA292AB7450C0041D723 /* Daily Dogs Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -391,23 +474,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		560D57D02AB1B78100DA6F71 /* Resources */ = {
+		568AFA0F2AB7450B0041D723 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				560D57DC2AB1B78100DA6F71 /* Preview Assets.xcassets in Resources */,
-				560D57D92AB1B78100DA6F71 /* Assets.xcassets in Resources */,
+				568AFA1B2AB7450C0041D723 /* Preview Assets.xcassets in Resources */,
+				568AFA182AB7450C0041D723 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		560D57DF2AB1B78200DA6F71 /* Resources */ = {
+		568AFA1E2AB7450C0041D723 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		560D57E92AB1B78200DA6F71 /* Resources */ = {
+		568AFA282AB7450C0041D723 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -428,6 +511,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		10C8AFA60E8BBA30787A9D45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Daily Dogs Watch App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34FC672C20574FF5B7BB7096 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3B06AD1E1E4923F5004D2608 /* Thin Binary */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -444,6 +571,28 @@
 			shellPath = /bin/sh;
 			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin";
 		};
+		6C19F372980A297104BEE739 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RunnerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9740EEB61CF901F6004384FC /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -459,6 +608,23 @@
 			shellPath = /bin/sh;
 			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build";
 		};
+		B9F00BEDD668C8B976865234 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -470,29 +636,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		560D57CE2AB1B78100DA6F71 /* Sources */ = {
+		568AFA0D2AB7450B0041D723 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				560D57D72AB1B78100DA6F71 /* ContentView.swift in Sources */,
-				560D57D52AB1B78100DA6F71 /* daily_watch_dogsApp.swift in Sources */,
+				568AFA162AB7450B0041D723 /* ContentView.swift in Sources */,
+				568AFA142AB7450B0041D723 /* Daily_DogsApp.swift in Sources */,
+				5698963E2AB747C3003A8263 /* WatchView.swift in Sources */,
+				5698963D2AB747C3003A8263 /* WatchViewModel.swift in Sources */,
+				5698963C2AB747C3003A8263 /* WatchService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		560D57DD2AB1B78200DA6F71 /* Sources */ = {
+		568AFA1C2AB7450C0041D723 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				560D57E62AB1B78200DA6F71 /* daily_watch_dogs_Watch_AppTests.swift in Sources */,
+				568AFA252AB7450C0041D723 /* Daily_Dogs_Watch_AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		560D57E72AB1B78200DA6F71 /* Sources */ = {
+		568AFA262AB7450C0041D723 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				560D57F02AB1B78200DA6F71 /* daily_watch_dogs_Watch_AppUITests.swift in Sources */,
-				560D57F22AB1B78200DA6F71 /* daily_watch_dogs_Watch_AppUITestsLaunchTests.swift in Sources */,
+				568AFA2F2AB7450C0041D723 /* Daily_Dogs_Watch_AppUITests.swift in Sources */,
+				568AFA312AB7450C0041D723 /* Daily_Dogs_Watch_AppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,20 +682,20 @@
 			target = 97C146ED1CF9000F007C117D /* Runner */;
 			targetProxy = 331C8085294A63A400263BE5 /* PBXContainerItemProxy */;
 		};
-		560D57E32AB1B78200DA6F71 /* PBXTargetDependency */ = {
+		568AFA222AB7450C0041D723 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 560D57D12AB1B78100DA6F71 /* daily_watch_dogs Watch App */;
-			targetProxy = 560D57E22AB1B78200DA6F71 /* PBXContainerItemProxy */;
+			target = 568AFA102AB7450B0041D723 /* Daily Dogs Watch App */;
+			targetProxy = 568AFA212AB7450C0041D723 /* PBXContainerItemProxy */;
 		};
-		560D57ED2AB1B78200DA6F71 /* PBXTargetDependency */ = {
+		568AFA2C2AB7450C0041D723 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 560D57D12AB1B78100DA6F71 /* daily_watch_dogs Watch App */;
-			targetProxy = 560D57EC2AB1B78200DA6F71 /* PBXContainerItemProxy */;
+			target = 568AFA102AB7450B0041D723 /* Daily Dogs Watch App */;
+			targetProxy = 568AFA2B2AB7450C0041D723 /* PBXContainerItemProxy */;
 		};
-		560D57F42AB1B78200DA6F71 /* PBXTargetDependency */ = {
+		568AFA332AB7450C0041D723 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 560D57D12AB1B78100DA6F71 /* daily_watch_dogs Watch App */;
-			targetProxy = 560D57F32AB1B78200DA6F71 /* PBXContainerItemProxy */;
+			target = 568AFA102AB7450B0041D723 /* Daily Dogs Watch App */;
+			targetProxy = 568AFA322AB7450C0041D723 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -624,6 +793,7 @@
 		};
 		331C8088294A63A400263BE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB701740AAEC8D642ECF5489 /* Pods-RunnerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -641,6 +811,7 @@
 		};
 		331C8089294A63A400263BE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AED2DD515F77C906B932DA9A /* Pods-RunnerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -656,6 +827,7 @@
 		};
 		331C808A294A63A400263BE5 /* Profile */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 260B46D4B14FBF2B654CC317 /* Pods-RunnerTests.profile.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -669,8 +841,9 @@
 			};
 			name = Profile;
 		};
-		560D57F72AB1B78200DA6F71 /* Debug */ = {
+		568AFA372AB7450C0041D723 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F14F57F93DC58DE2F15AD932 /* Pods-Daily Dogs Watch App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -682,11 +855,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"daily_watch_dogs Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Daily Dogs Watch App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = daily_watch_dogs;
+				INFOPLIST_KEY_CFBundleDisplayName = "Daily Dogs";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.chechoora.dailydogs.dailyDogs;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -709,8 +882,9 @@
 			};
 			name = Debug;
 		};
-		560D57F82AB1B78200DA6F71 /* Release */ = {
+		568AFA382AB7450C0041D723 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0376FF090A2EDC18EB9C0743 /* Pods-Daily Dogs Watch App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -722,11 +896,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"daily_watch_dogs Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Daily Dogs Watch App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = daily_watch_dogs;
+				INFOPLIST_KEY_CFBundleDisplayName = "Daily Dogs";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.chechoora.dailydogs.dailyDogs;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -746,8 +920,9 @@
 			};
 			name = Release;
 		};
-		560D57F92AB1B78200DA6F71 /* Profile */ = {
+		568AFA392AB7450C0041D723 /* Profile */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88B3BA83329662EAAB088CB8 /* Pods-Daily Dogs Watch App.profile.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -759,11 +934,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"daily_watch_dogs Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Daily Dogs Watch App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = daily_watch_dogs;
+				INFOPLIST_KEY_CFBundleDisplayName = "Daily Dogs";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.chechoora.dailydogs.dailyDogs;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -783,7 +958,7 @@
 			};
 			name = Profile;
 		};
-		560D57FA2AB1B78200DA6F71 /* Debug */ = {
+		568AFA3B2AB7450C0041D723 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -802,7 +977,7 @@
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "chechoora.daily-watch-dogs-Watch-AppTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "chechoora.Daily-Dogs-Watch-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -810,12 +985,12 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/daily_watch_dogs Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/daily_watch_dogs Watch App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daily Dogs Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Daily Dogs Watch App";
 				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Debug;
 		};
-		560D57FB2AB1B78200DA6F71 /* Release */ = {
+		568AFA3C2AB7450C0041D723 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -833,18 +1008,18 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "chechoora.daily-watch-dogs-Watch-AppTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "chechoora.Daily-Dogs-Watch-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/daily_watch_dogs Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/daily_watch_dogs Watch App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daily Dogs Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Daily Dogs Watch App";
 				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Release;
 		};
-		560D57FC2AB1B78200DA6F71 /* Profile */ = {
+		568AFA3D2AB7450C0041D723 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -862,18 +1037,18 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "chechoora.daily-watch-dogs-Watch-AppTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "chechoora.Daily-Dogs-Watch-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/daily_watch_dogs Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/daily_watch_dogs Watch App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daily Dogs Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Daily Dogs Watch App";
 				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Profile;
 		};
-		560D57FD2AB1B78200DA6F71 /* Debug */ = {
+		568AFA3F2AB7450C0041D723 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -891,7 +1066,7 @@
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "chechoora.daily-watch-dogs-Watch-AppUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "chechoora.Daily-Dogs-Watch-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -899,12 +1074,12 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "daily_watch_dogs Watch App";
+				TEST_TARGET_NAME = "Daily Dogs Watch App";
 				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Debug;
 		};
-		560D57FE2AB1B78200DA6F71 /* Release */ = {
+		568AFA402AB7450C0041D723 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -921,18 +1096,18 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "chechoora.daily-watch-dogs-Watch-AppUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "chechoora.Daily-Dogs-Watch-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "daily_watch_dogs Watch App";
+				TEST_TARGET_NAME = "Daily Dogs Watch App";
 				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Release;
 		};
-		560D57FF2AB1B78200DA6F71 /* Profile */ = {
+		568AFA412AB7450C0041D723 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -949,13 +1124,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "chechoora.daily-watch-dogs-Watch-AppUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "chechoora.Daily-Dogs-Watch-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "daily_watch_dogs Watch App";
+				TEST_TARGET_NAME = "Daily Dogs Watch App";
 				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Profile;
@@ -1125,32 +1300,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		560D58002AB1B78200DA6F71 /* Build configuration list for PBXNativeTarget "daily_watch_dogs Watch App" */ = {
+		568AFA362AB7450C0041D723 /* Build configuration list for PBXNativeTarget "Daily Dogs Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				560D57F72AB1B78200DA6F71 /* Debug */,
-				560D57F82AB1B78200DA6F71 /* Release */,
-				560D57F92AB1B78200DA6F71 /* Profile */,
+				568AFA372AB7450C0041D723 /* Debug */,
+				568AFA382AB7450C0041D723 /* Release */,
+				568AFA392AB7450C0041D723 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		560D58012AB1B78200DA6F71 /* Build configuration list for PBXNativeTarget "daily_watch_dogs Watch AppTests" */ = {
+		568AFA3A2AB7450C0041D723 /* Build configuration list for PBXNativeTarget "Daily Dogs Watch AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				560D57FA2AB1B78200DA6F71 /* Debug */,
-				560D57FB2AB1B78200DA6F71 /* Release */,
-				560D57FC2AB1B78200DA6F71 /* Profile */,
+				568AFA3B2AB7450C0041D723 /* Debug */,
+				568AFA3C2AB7450C0041D723 /* Release */,
+				568AFA3D2AB7450C0041D723 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		560D58022AB1B78200DA6F71 /* Build configuration list for PBXNativeTarget "daily_watch_dogs Watch AppUITests" */ = {
+		568AFA3E2AB7450C0041D723 /* Build configuration list for PBXNativeTarget "Daily Dogs Watch AppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				560D57FD2AB1B78200DA6F71 /* Debug */,
-				560D57FE2AB1B78200DA6F71 /* Release */,
-				560D57FF2AB1B78200DA6F71 /* Profile */,
+				568AFA3F2AB7450C0041D723 /* Debug */,
+				568AFA402AB7450C0041D723 /* Release */,
+				568AFA412AB7450C0041D723 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

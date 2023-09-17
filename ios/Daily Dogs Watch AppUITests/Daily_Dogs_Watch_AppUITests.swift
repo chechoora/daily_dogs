@@ -1,13 +1,13 @@
 //
-//  daily_watch_dogs_Watch_AppUITests.swift
-//  daily_watch_dogs Watch AppUITests
+//  Daily_Dogs_Watch_AppUITests.swift
+//  Daily Dogs Watch AppUITests
 //
-//  Created by Kyrylo Kharchenko on 13.09.2023.
+//  Created by Kyrylo Kharchenko on 17.09.2023.
 //
 
 import XCTest
 
-final class daily_watch_dogs_Watch_AppUITests: XCTestCase {
+final class Daily_Dogs_Watch_AppUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

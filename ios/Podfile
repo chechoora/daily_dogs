@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '11.0'
+platform :ios, '16.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+def shared_pods
+  pod 'Alamofire'
+end
+
+target 'Runner' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Runner
+  shared_pods
+
+  target 'RunnerTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'Daily Dogs Watch App' do
+    platform :watchos, '9.0'
+    
+    # Pods for Daily Dogs Watch App
+    shared_pods
+    
+end
