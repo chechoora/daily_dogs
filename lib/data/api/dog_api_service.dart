@@ -13,8 +13,16 @@ abstract class DogApiService extends ChopperService {
     @Query("limit") int limit = 10,
   });
 
+  @Get(path: "/favourites")
+  Future<Response> fetchFavorites();
+
   @Post(path: "/favourites")
   Future<Response> addToFavorites({
     @Body() required JsonMap body,
+  });
+
+  @Delete(path: "/favourites/{favoriteId}")
+  Future<Response> removeFromFavorites({
+    @Path() required String favoriteId,
   });
 }

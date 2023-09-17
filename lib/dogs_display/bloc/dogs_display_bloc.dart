@@ -19,6 +19,7 @@ class DogsDisplayBloc extends Bloc<DogsDisplayEvent, DogsDisplayState> {
     FetchRandomDogsEvent event,
     Emitter<DogsDisplayState> emit,
   ) async {
+    emit(LoadingState());
     final randomDogs = await dogsRepository.fetchRandomDogs();
     emit(DataState(randomDogs));
   }
@@ -43,6 +44,9 @@ class DataState extends DogsDisplayState {
   final List<DogModel> dogDisplayList;
 
   DataState(this.dogDisplayList);
+
+  @override
+  List<Object?> get props => [dogDisplayList];
 }
 
 class NotifyState extends DogsDisplayState {
@@ -56,7 +60,10 @@ abstract class DogsDisplayEvent extends Equatable {
   List<Object?> get props => [];
 }
 
-class FetchRandomDogsEvent extends DogsDisplayEvent {}
+class FetchRandomDogsEvent extends DogsDisplayEvent {
+  @override
+  List<Object?> get props => [double.nan];
+}
 
 class AddToFavoritesEvent extends DogsDisplayEvent {
   final String id;
