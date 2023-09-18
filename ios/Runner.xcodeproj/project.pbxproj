@@ -24,6 +24,7 @@
 		5698963C2AB747C3003A8263 /* WatchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569896382AB747C3003A8263 /* WatchService.swift */; };
 		5698963D2AB747C3003A8263 /* WatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5698963A2AB747C3003A8263 /* WatchViewModel.swift */; };
 		5698963E2AB747C3003A8263 /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5698963B2AB747C3003A8263 /* WatchView.swift */; };
+		56AA1BE82AB81572009FA119 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AA1BE72AB81572009FA119 /* ResponseModel.swift */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
@@ -110,6 +111,7 @@
 		569896382AB747C3003A8263 /* WatchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchService.swift; sourceTree = "<group>"; };
 		5698963A2AB747C3003A8263 /* WatchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchViewModel.swift; sourceTree = "<group>"; };
 		5698963B2AB747C3003A8263 /* WatchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
+		56AA1BE72AB81572009FA119 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				569896382AB747C3003A8263 /* WatchService.swift */,
+				56AA1BE72AB81572009FA119 /* ResponseModel.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -644,6 +647,7 @@
 				568AFA142AB7450B0041D723 /* Daily_DogsApp.swift in Sources */,
 				5698963E2AB747C3003A8263 /* WatchView.swift in Sources */,
 				5698963D2AB747C3003A8263 /* WatchViewModel.swift in Sources */,
+				56AA1BE82AB81572009FA119 /* ResponseModel.swift in Sources */,
 				5698963C2AB747C3003A8263 /* WatchService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

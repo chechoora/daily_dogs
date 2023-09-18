@@ -13,6 +13,8 @@ class WatchViewModel: ObservableObject {
     
     private let watchService = WatchService()
     
+    private var images: [String] = []
+    
     init() {
         Task {
           await fetchRandomFavoriteImage()
@@ -22,14 +24,28 @@ class WatchViewModel: ObservableObject {
     
     func fetchRandomFavoriteImage() async {
         state = .loading
-        let images = await watchService.fetchFavoriteImages()
-        state = .loaded(image: "https://cdn2.thedogapi.com/images/SkvZgx94m.jpg")
+        let imagesResult = await watchService.fetchFavoriteImages()
+        let images = (try? imagesResult.get()) ?? []
+        if (images.isEmpty) {
+            state = .failed(error: DisplayError(messsage: "No image to display"))
+        } else {
+            self.images = images
+            state = .loaded(image: images.randomElement()!)
+        }
+    }
+    
+    func reloadImage() {
+        state = .loaded(image: images.randomElement()!)
     }
 }
 
 enum State {
     case idle
     case loading
-    case failed(error: Error)
+    case failed(error: DisplayError)
     case loaded(image: String)
+}
+
+struct DisplayError: Error {
+    let messsage: String
 }

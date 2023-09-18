@@ -12,11 +12,19 @@ struct WatchView: View {
     @ObservedObject var viewModel: WatchViewModel
     
     var body: some View {
+        contentView().gesture(
+            LongPressGesture().onEnded { _ in 
+                viewModel.reloadImage()
+            }
+        )
+    }
+    
+    func contentView() -> AnyView {
         switch viewModel.state {
         case .loading:
-            ProgressView()
+            return AnyView(ProgressView())
         case .loaded(let image):
-            AsyncImage(
+            return AnyView(AsyncImage(
                 url: URL(string: image),
                 content: { image in
                     image.resizable()
@@ -25,9 +33,11 @@ struct WatchView: View {
                 placeholder: {
                     ProgressView()
                 }
-            )
+            ))
+        case .failed(let error):
+            return  AnyView(Text(error.messsage))
         default:
-            EmptyView()
+            return AnyView(EmptyView())
         }
     }
 }
