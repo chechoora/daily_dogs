@@ -12,6 +12,7 @@ class WatchViewModel: ObservableObject {
     @Published private(set) var state = State.idle
     
     private let watchService = WatchService()
+    private let watchSesseionManager = WatchSessionManager()
     
     private var images: [String] = []
     

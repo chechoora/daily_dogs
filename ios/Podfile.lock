@@ -1,16 +1,29 @@
 PODS:
-  - Alamofire (5.7.1)
+  - Alamofire (5.8.0)
+  - Flutter (1.0.0)
+  - watch_connectivity (0.0.1):
+    - Flutter
 
 DEPENDENCIES:
   - Alamofire
+  - Flutter (from `Flutter`)
+  - watch_connectivity (from `.symlinks/plugins/watch_connectivity/ios`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Alamofire
 
-SPEC CHECKSUMS:
-  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  watch_connectivity:
+    :path: ".symlinks/plugins/watch_connectivity/ios"
 
-PODFILE CHECKSUM: 77f6f0c5ab1660b171395fd261f2ed47133fbced
+SPEC CHECKSUMS:
+  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  watch_connectivity: 715eb484685e05846eab74795348a44bb2809b82
+
+PODFILE CHECKSUM: 1f0666bdce8dcb93302b7973390b8d2931eb7de7
 
 COCOAPODS: 1.12.1

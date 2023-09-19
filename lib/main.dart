@@ -1,6 +1,7 @@
 import 'package:daily_dogs/di.dart';
 import 'package:daily_dogs/dogs_display/dogs_display_widget.dart';
 import 'package:daily_dogs/favorites_display/favorites_display_widget.dart';
+import 'package:daily_dogs/watch_connect/watch_connect_manager.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,8 +9,21 @@ void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  late final WatchConnectManager watchConnectManager;
+
+  @override
+  void initState() {
+    watchConnectManager = WatchConnectManager()..init();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -37,6 +51,11 @@ class MyApp extends StatelessWidget {
               DogsDisplayWidget(),
               FavoritesDisplayWidget(),
             ],
+          ),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {
+              watchConnectManager.sendTestMessage();
+            },
           ),
         ),
       ),
