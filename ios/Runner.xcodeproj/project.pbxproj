@@ -13,6 +13,7 @@
 		331C808B294A63AB00263BE5 /* RunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C807B294A618700263BE5 /* RunnerTests.swift */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		440B7E43D3674497935CA1DB /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7DE27E42D9DA2B05FD12D6 /* Pods_Runner.framework */; };
+		5601304B2ABEF8EB00AD47CA /* TokenReciver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5601304A2ABEF8EB00AD47CA /* TokenReciver.swift */; };
 		568AFA142AB7450B0041D723 /* Daily_DogsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AFA132AB7450B0041D723 /* Daily_DogsApp.swift */; };
 		568AFA162AB7450B0041D723 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568AFA152AB7450B0041D723 /* ContentView.swift */; };
 		568AFA182AB7450C0041D723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 568AFA172AB7450C0041D723 /* Assets.xcassets */; };
@@ -99,6 +100,7 @@
 		331C8081294A63A400263BE5 /* RunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A3F36980E7A39437CF48F94 /* Pods_RunnerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunnerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
+		5601304A2ABEF8EB00AD47CA /* TokenReciver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenReciver.swift; sourceTree = "<group>"; };
 		568AFA112AB7450B0041D723 /* Daily Dogs Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Dogs Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		568AFA132AB7450B0041D723 /* Daily_DogsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_DogsApp.swift; sourceTree = "<group>"; };
 		568AFA152AB7450B0041D723 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 			children = (
 				569896382AB747C3003A8263 /* WatchService.swift */,
 				56AA1BE72AB81572009FA119 /* ResponseModel.swift */,
+				5601304A2ABEF8EB00AD47CA /* TokenReciver.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -652,6 +655,7 @@
 				5698963D2AB747C3003A8263 /* WatchViewModel.swift in Sources */,
 				56AA1BE82AB81572009FA119 /* ResponseModel.swift in Sources */,
 				5698963C2AB747C3003A8263 /* WatchService.swift in Sources */,
+				5601304B2ABEF8EB00AD47CA /* TokenReciver.swift in Sources */,
 				56D9E2FB2AB977CD003B4CDB /* WatchSessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

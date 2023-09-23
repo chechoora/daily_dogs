@@ -12,14 +12,18 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
     
     private let session = WCSession.default
     
-    var reachable = false
-    var context = [String: Any]()
-    var receivedContext = [String: Any]()
-    var log = [String]()
+    private var reachable = false
+    private var context = [String: Any]()
+    private var receivedContext = [String: Any]()
+    private var log = [String]()
+    var onMessageRecived: (([String: Any]) -> ())?
     
     override init() {
         super.init()
         session.delegate = self
+    }
+    
+    func startSession() {
         session.activate()
     }
     
@@ -28,11 +32,9 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
-        DispatchQueue.main.async { self.log.append("Received message: \(message)") }
-    }
-    
-    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String: Any]) {
-        DispatchQueue.main.async { self.log.append("Received context: \(applicationContext)") }
+        DispatchQueue.main.async {
+            self.onMessageRecived?(message)
+        }
     }
     
     func refresh() {

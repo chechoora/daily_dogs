@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:chopper/chopper.dart';
+import 'package:daily_dogs/util/huh.dart';
 
 class HeaderInterceptor implements RequestInterceptor {
   @override
@@ -15,3 +16,7 @@ class HeaderInterceptor implements RequestInterceptor {
 }
 
 const apiKey = 'live_OWXbYSTDtAOAlvRZHydWrS0jMDCfclQrijE78Fw3w1i6gRNbY98FprMnkc7coKbV';
+
+const JsonMap apiKeyMap = {
+  'apiKey': apiKey,
+};

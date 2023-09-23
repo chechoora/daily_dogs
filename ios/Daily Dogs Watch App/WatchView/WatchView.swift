@@ -12,33 +12,47 @@ struct WatchView: View {
     @ObservedObject var viewModel: WatchViewModel
     
     var body: some View {
-        contentView().gesture(
-            LongPressGesture().onEnded { _ in 
-                viewModel.reloadImage()
-            }
-        )
+        contentView()
     }
     
     func contentView() -> AnyView {
         switch viewModel.state {
+        case .idle:
+            return AnyView(Text("Please Open Phone App to login").multilineTextAlignment(.center))
         case .loading:
             return AnyView(ProgressView())
-        case .loaded(let image):
-            return AnyView(AsyncImage(
-                url: URL(string: image),
-                content: { image in
-                    image.resizable()
-                        .scaledToFit()
-                },
-                placeholder: {
-                    ProgressView()
+        case .loaded(let images):
+            return AnyView(
+                VStack {
+                    Button(action: {
+                        viewModel.reloadImages()
+                    }) {
+                        Image(systemName: "goforward")
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    TabView {
+                        ForEach(images, id: \.self) { image in
+                            displayImage(imageUrl: image)
+                        }
+                    }
                 }
-            ))
+            )
         case .failed(let error):
             return  AnyView(Text(error.messsage))
-        default:
-            return AnyView(EmptyView())
         }
+    }
+    
+    private func displayImage(imageUrl: String) -> AnyView {
+        return AnyView(AsyncImage(
+            url: URL(string: imageUrl),
+            content: { image in
+                image.resizable()
+                    .scaledToFit()
+            },
+            placeholder: {
+                ProgressView()
+            }
+        ))
     }
 }
 

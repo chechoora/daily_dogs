@@ -10,20 +10,20 @@ import Foundation
 class WatchViewModel: ObservableObject {
     
     @Published private(set) var state = State.idle
-    
-    private let watchService = WatchService()
-    private let watchSesseionManager = WatchSessionManager()
-    
+    private var watchService = WatchService()
     private var images: [String] = []
     
     init() {
-        Task {
-          await fetchRandomFavoriteImage()
+        watchService.onServiceReady = {
+            Task {
+                await self.fetchRandomFavoriteImage()
+            }
         }
+        watchService.startService()
     }
 
     
-    func fetchRandomFavoriteImage() async {
+    private func fetchRandomFavoriteImage() async {
         state = .loading
         let imagesResult = await watchService.fetchFavoriteImages()
         let images = (try? imagesResult.get()) ?? []
@@ -31,12 +31,14 @@ class WatchViewModel: ObservableObject {
             state = .failed(error: DisplayError(messsage: "No image to display"))
         } else {
             self.images = images
-            state = .loaded(image: images.randomElement()!)
+            state = .loaded(images: images)
         }
     }
     
-    func reloadImage() {
-        state = .loaded(image: images.randomElement()!)
+    func reloadImages() {
+        Task {
+            await self.fetchRandomFavoriteImage()
+        }
     }
 }
 
@@ -44,7 +46,7 @@ enum State {
     case idle
     case loading
     case failed(error: DisplayError)
-    case loaded(image: String)
+    case loaded(images: [String])
 }
 
 struct DisplayError: Error {

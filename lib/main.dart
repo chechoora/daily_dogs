@@ -1,3 +1,4 @@
+import 'package:daily_dogs/data/api/header_interceptor.dart';
 import 'package:daily_dogs/di.dart';
 import 'package:daily_dogs/dogs_display/dogs_display_widget.dart';
 import 'package:daily_dogs/favorites_display/favorites_display_widget.dart';
@@ -21,7 +22,13 @@ class _MyAppState extends State<MyApp> {
 
   @override
   void initState() {
-    watchConnectManager = WatchConnectManager()..init();
+    watchConnectManager = WatchConnectManager(
+      onReachableStateChanged: (newReachableState) {
+        if (newReachableState) {
+          watchConnectManager.sendMessage(apiKeyMap);
+        }
+      },
+    )..init();
     super.initState();
   }
 
@@ -51,11 +58,6 @@ class _MyAppState extends State<MyApp> {
               DogsDisplayWidget(),
               FavoritesDisplayWidget(),
             ],
-          ),
-          floatingActionButton: FloatingActionButton(
-            onPressed: () {
-              watchConnectManager.sendTestMessage();
-            },
           ),
         ),
       ),

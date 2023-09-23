@@ -10,10 +10,24 @@ import Alamofire
 
 class WatchService {
     
+    private var token: String? = nil
+    private var tokenReciver = TokenReciver()
+    var onServiceReady: (() -> ())?
+    
+    func startService() {
+        tokenReciver.onTokenObtained = { recivedToken in
+            self.token = recivedToken
+            self.onServiceReady?()
+        }
+        tokenReciver.startTokenCheck()
+    }
     func fetchFavoriteImages() async -> Result<[String], Error> {
         do {
+            if token == nil {
+                return Result.failure(WatchServiceError(messsage: "Token is not initilised"))
+            }
             return try await withUnsafeThrowingContinuation { continuation in
-                AF.request("https://api.thedogapi.com/v1/favourites", method: .get, headers: HTTPHeaders(["Content-Type": "application/json", "x-api-key": "live_OWXbYSTDtAOAlvRZHydWrS0jMDCfclQrijE78Fw3w1i6gRNbY98FprMnkc7coKbV"])).responseDecodable(of:[FavoriteDisplayModel].self) { response in
+                AF.request("https://api.thedogapi.com/v1/favourites", method: .get, headers: HTTPHeaders(["Content-Type": "application/json", "x-api-key": token!])).responseDecodable(of:[FavoriteDisplayModel].self) { response in
                     let result = response.result
                     switch result {
                     case .success(let favoriteList):
@@ -37,5 +51,8 @@ class WatchService {
         }
         return images.compactMap{ $0 } as [String]
     }
-    
+}
+
+struct WatchServiceError: Error {
+    let messsage: String
 }
