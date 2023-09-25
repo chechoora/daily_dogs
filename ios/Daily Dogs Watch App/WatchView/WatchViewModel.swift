@@ -11,33 +11,37 @@ class WatchViewModel: ObservableObject {
     
     @Published private(set) var state = State.idle
     private var watchService = WatchService()
+    private var apiKeyReciver = ApiKeyReciver()
+
     private var images: [String] = []
     
     init() {
-        watchService.onServiceReady = {
-            Task {
-                await self.fetchRandomFavoriteImage()
-            }
-        }
-        watchService.startService()
+        apiKeyReciver.fetchApiKey(onApiKeyObtained: { apiKey in
+            self.watchService.apiKey = apiKey
+            self.reloadImages()
+        })
     }
 
-    
-    private func fetchRandomFavoriteImage() async {
+    private func fetchRandomFavoriteImages() async {
         state = .loading
-        let imagesResult = await watchService.fetchFavoriteImages()
-        let images = (try? imagesResult.get()) ?? []
-        if (images.isEmpty) {
-            state = .failed(error: DisplayError(messsage: "No image to display"))
-        } else {
-            self.images = images
-            state = .loaded(images: images)
+        do {
+            let imagesResult = try await watchService.fetchFavoriteImages()
+            if (imagesResult.isEmpty) {
+                state = .failed(error: DisplayError(messsage: "No image to display"))
+            } else {
+                self.images = imagesResult
+                state = .loaded(images: images)
+            }
+        } catch let serviceError as WatchServiceError {
+            state = .failed(error: DisplayError(messsage: serviceError.messsage))
+        } catch {
+            state = .failed(error: DisplayError(messsage: "Classic something went wrong"))
         }
     }
     
     func reloadImages() {
         Task {
-            await self.fetchRandomFavoriteImage()
+            await self.fetchRandomFavoriteImages()
         }
     }
 }
