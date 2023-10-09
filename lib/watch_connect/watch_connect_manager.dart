@@ -11,18 +11,6 @@ class WatchConnectManager {
   WatchConfiguration? configuration;
   final ValueChanged<bool>? onReachableStateChanged;
 
-  void init() {
-    _watch.messageStream.listen((data) {
-      print('test');
-    });
-
-    _watch.contextStream.listen((data) {
-      print('test');
-    });
-
-    initConfigurations();
-  }
-
   void initConfigurations() async {
     configuration = await _watch.initConfiguration();
     onReachableStateChanged?.call(configuration?.isReachable ?? false);

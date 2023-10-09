@@ -13,8 +13,6 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
     private let session = WCSession.default
     
     private var reachable = false
-    private var context = [String: Any]()
-    private var receivedContext = [String: Any]()
     private var log = [String]()
     var onMessageRecived: (([String: Any]) -> ())?
     
@@ -28,19 +26,13 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
     }
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        refresh()
+        reachable = session.isReachable
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
         DispatchQueue.main.async {
             self.onMessageRecived?(message)
         }
-    }
-    
-    func refresh() {
-        reachable = session.isReachable
-        context = session.applicationContext
-        receivedContext = session.receivedApplicationContext
     }
     
 }

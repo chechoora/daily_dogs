@@ -16,9 +16,7 @@ class WatchConfiguration {
   var _reachable = false;
 
   bool get isSupported => _supported;
-
   bool get isPaired => _paired;
-
   bool get isReachable => _reachable;
 }
 

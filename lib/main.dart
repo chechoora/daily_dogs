@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
           watchConnectManager.sendMessage(apiKeyMap);
         }
       },
-    )..init();
+    )..initConfigurations();
     super.initState();
   }
 
