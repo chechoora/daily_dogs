@@ -1,4 +1,4 @@
-# check_norris_test
+# daily_dogs
 A Flutter test project is showcased here, demonstrating the integration between Flutter App and AppleWatch with the help of [watch_connectivity](https://pub.dev/packages/watch_connectivity) for Flutter.
 
 The application leverages the The Dog API available at https://api.thedogapi.com/v1.
