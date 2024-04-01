@@ -1,16 +1,14 @@
-# daily_dogs
+# check_norris_test
+A Flutter test project is showcased here, demonstrating the integration between Flutter App and AppleWatch with the help of [watch_connectivity](https://pub.dev/packages/watch_connectivity) for Flutter.
 
-A new Flutter project.
+The application leverages the The Dog API available at https://api.thedogapi.com/v1.
 
-## Getting Started
+Users can see random dogs and add them to their favorites. User can also see they favorites on they Apple Watch.
 
-This project is a starting point for a Flutter application.
+## Screenshots
+| Random Dogs  | Favorites|
+| ------------- | ------------- |
+| <img src="https://github.com/chechoora/daily_dogs/blob/main/github_utils/main_screen.png?raw=true" width=40% height=40%/> | <img src="https://github.com/chechoora/daily_dogs/blob/main/github_utils/favorite_screen.png?raw=true" width=40% height=40% />  |
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Apple Watch
+<img src="https://github.com/chechoora/daily_dogs/blob/main/github_utils/watch_screen.png?raw=true" width=40% height=40%/>
